@@ -12,29 +12,27 @@ namespace WinForm
 {
 	public partial class Form_ChecBox : Form
 	{
+		List<CheckBox> transp = new List<CheckBox>();
 		public Form_ChecBox()
 		{
 			InitializeComponent();
+
+			transp.Add(cb_carro);
+			transp.Add(cb_aviao);
+			transp.Add(cb_navio);
+			transp.Add(cb_onibus);
 		}
 
 		private void btn_transportesMarcados_Click(object sender, EventArgs e)
 		{
+			
 			string txt = "";
-			if (cb_carro.Checked)
+			foreach (CheckBox item in transp)
 			{
-				txt += cb_carro.Text + ", ";
-			}
-			if (cb_aviao.Checked)
-			{
-				txt += cb_aviao.Text + ", ";
-			}
-			if (cb_navio.Checked)
-			{
-				txt += cb_navio.Text + ", ";
-			}
-			if (cb_onibus.Checked)
-			{
-				txt += cb_onibus.Text + ", ";
+				if(item.Checked)
+				{
+					txt += item.Text + ", ";
+				}
 			}
 
 			MessageBox.Show(txt);
@@ -47,6 +45,12 @@ namespace WinForm
 			{
 				MessageBox.Show("Patinete Marcada");
 			}
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			Form_FilhoCheckBox form_FilhoCheckBox = new Form_FilhoCheckBox();
+			form_FilhoCheckBox.ShowDialog();
 		}
 	}
 }
