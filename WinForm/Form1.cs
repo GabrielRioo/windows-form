@@ -16,5 +16,15 @@ namespace WinForm
 		{
 			InitializeComponent();
 		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btn_enviar_Click(object sender, EventArgs e)
+		{
+			lbl_newText.Text = txb_input.Text;
+		}
 	}
 }
