@@ -1,6 +1,6 @@
 ﻿namespace WinForm
 {
-	partial class Form1
+	partial class Form_Principal
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,64 +28,93 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.btn_enviar = new System.Windows.Forms.Button();
+			this.btn_adicionar = new System.Windows.Forms.Button();
 			this.lbl_texto = new System.Windows.Forms.Label();
-			this.txb_input = new System.Windows.Forms.TextBox();
+			this.txb_veiculo = new System.Windows.Forms.TextBox();
 			this.lbl_newText = new System.Windows.Forms.Label();
+			this.txb_listaVeiculos = new System.Windows.Forms.TextBox();
+			this.btn_limpar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// btn_enviar
+			// btn_adicionar
 			// 
-			this.btn_enviar.BackColor = System.Drawing.Color.DarkRed;
-			this.btn_enviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_enviar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btn_enviar.Location = new System.Drawing.Point(551, 298);
-			this.btn_enviar.Name = "btn_enviar";
-			this.btn_enviar.Size = new System.Drawing.Size(244, 42);
-			this.btn_enviar.TabIndex = 0;
-			this.btn_enviar.Text = "ENVIAR";
-			this.btn_enviar.UseVisualStyleBackColor = false;
-			this.btn_enviar.Click += new System.EventHandler(this.btn_enviar_Click);
+			this.btn_adicionar.BackColor = System.Drawing.Color.Green;
+			this.btn_adicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn_adicionar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btn_adicionar.Location = new System.Drawing.Point(273, 68);
+			this.btn_adicionar.Name = "btn_adicionar";
+			this.btn_adicionar.Size = new System.Drawing.Size(155, 42);
+			this.btn_adicionar.TabIndex = 0;
+			this.btn_adicionar.Text = "ADICIONAR";
+			this.btn_adicionar.UseVisualStyleBackColor = false;
+			this.btn_adicionar.Click += new System.EventHandler(this.btn_adicionar_Click);
 			// 
 			// lbl_texto
 			// 
 			this.lbl_texto.AutoSize = true;
 			this.lbl_texto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_texto.Location = new System.Drawing.Point(545, 167);
+			this.lbl_texto.Location = new System.Drawing.Point(110, 9);
 			this.lbl_texto.Name = "lbl_texto";
-			this.lbl_texto.Size = new System.Drawing.Size(250, 31);
+			this.lbl_texto.Size = new System.Drawing.Size(224, 31);
 			this.lbl_texto.TabIndex = 1;
-			this.lbl_texto.Text = "Digite alguma coisa";
+			this.lbl_texto.Text = "Digite um Veiculo";
 			// 
-			// txb_input
+			// txb_veiculo
 			// 
-			this.txb_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txb_input.Location = new System.Drawing.Point(551, 224);
-			this.txb_input.Multiline = true;
-			this.txb_input.Name = "txb_input";
-			this.txb_input.Size = new System.Drawing.Size(244, 35);
-			this.txb_input.TabIndex = 2;
+			this.txb_veiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txb_veiculo.Location = new System.Drawing.Point(12, 71);
+			this.txb_veiculo.Multiline = true;
+			this.txb_veiculo.Name = "txb_veiculo";
+			this.txb_veiculo.Size = new System.Drawing.Size(236, 35);
+			this.txb_veiculo.TabIndex = 2;
 			// 
 			// lbl_newText
 			// 
 			this.lbl_newText.AutoSize = true;
 			this.lbl_newText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_newText.Location = new System.Drawing.Point(546, 370);
+			this.lbl_newText.Location = new System.Drawing.Point(168, 217);
 			this.lbl_newText.Name = "lbl_newText";
 			this.lbl_newText.Size = new System.Drawing.Size(0, 25);
 			this.lbl_newText.TabIndex = 3;
 			// 
-			// Form1
+			// txb_listaVeiculos
+			// 
+			this.txb_listaVeiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txb_listaVeiculos.Location = new System.Drawing.Point(12, 123);
+			this.txb_listaVeiculos.Multiline = true;
+			this.txb_listaVeiculos.Name = "txb_listaVeiculos";
+			this.txb_listaVeiculos.Size = new System.Drawing.Size(416, 338);
+			this.txb_listaVeiculos.TabIndex = 4;
+			// 
+			// btn_limpar
+			// 
+			this.btn_limpar.BackColor = System.Drawing.Color.DarkRed;
+			this.btn_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn_limpar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btn_limpar.Location = new System.Drawing.Point(12, 474);
+			this.btn_limpar.Name = "btn_limpar";
+			this.btn_limpar.Size = new System.Drawing.Size(416, 42);
+			this.btn_limpar.TabIndex = 5;
+			this.btn_limpar.Text = "LIMPAR";
+			this.btn_limpar.UseVisualStyleBackColor = false;
+			this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
+			// 
+			// Form_Principal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1333, 568);
+			this.ClientSize = new System.Drawing.Size(445, 528);
+			this.Controls.Add(this.btn_limpar);
+			this.Controls.Add(this.txb_listaVeiculos);
 			this.Controls.Add(this.lbl_newText);
-			this.Controls.Add(this.txb_input);
+			this.Controls.Add(this.txb_veiculo);
 			this.Controls.Add(this.lbl_texto);
-			this.Controls.Add(this.btn_enviar);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Controls.Add(this.btn_adicionar);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.MaximizeBox = false;
+			this.Name = "Form_Principal";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Estudo Windows Form";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -94,10 +123,12 @@
 
 		#endregion
 
-		private System.Windows.Forms.Button btn_enviar;
+		private System.Windows.Forms.Button btn_adicionar;
 		private System.Windows.Forms.Label lbl_texto;
-		private System.Windows.Forms.TextBox txb_input;
+		private System.Windows.Forms.TextBox txb_veiculo;
 		private System.Windows.Forms.Label lbl_newText;
+		private System.Windows.Forms.TextBox txb_listaVeiculos;
+		private System.Windows.Forms.Button btn_limpar;
 	}
 }
 
