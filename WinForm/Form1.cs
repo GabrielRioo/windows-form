@@ -49,5 +49,11 @@ namespace WinForm
 			txb_veiculo.Clear();
 			txb_veiculo.Focus();
 		}
+
+		private void btn_mostrar_Click(object sender, EventArgs e)
+		{
+			Form_Veiculos form_Veiculos = new Form_Veiculos(txb_listaVeiculos.Text);
+			form_Veiculos.ShowDialog();
+		}
 	}
 }

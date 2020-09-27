@@ -34,6 +34,7 @@
 			this.lbl_newText = new System.Windows.Forms.Label();
 			this.txb_listaVeiculos = new System.Windows.Forms.TextBox();
 			this.btn_limpar = new System.Windows.Forms.Button();
+			this.btn_mostrar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// btn_adicionar
@@ -99,11 +100,25 @@
 			this.btn_limpar.UseVisualStyleBackColor = false;
 			this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
 			// 
+			// btn_mostrar
+			// 
+			this.btn_mostrar.BackColor = System.Drawing.Color.DarkRed;
+			this.btn_mostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn_mostrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.btn_mostrar.Location = new System.Drawing.Point(12, 528);
+			this.btn_mostrar.Name = "btn_mostrar";
+			this.btn_mostrar.Size = new System.Drawing.Size(416, 42);
+			this.btn_mostrar.TabIndex = 6;
+			this.btn_mostrar.Text = "MOSTRAR VEICULOS";
+			this.btn_mostrar.UseVisualStyleBackColor = false;
+			this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
+			// 
 			// Form_Principal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(445, 528);
+			this.ClientSize = new System.Drawing.Size(445, 582);
+			this.Controls.Add(this.btn_mostrar);
 			this.Controls.Add(this.btn_limpar);
 			this.Controls.Add(this.txb_listaVeiculos);
 			this.Controls.Add(this.lbl_newText);
@@ -129,6 +144,7 @@
 		private System.Windows.Forms.Label lbl_newText;
 		private System.Windows.Forms.TextBox txb_listaVeiculos;
 		private System.Windows.Forms.Button btn_limpar;
+		private System.Windows.Forms.Button btn_mostrar;
 	}
 }
 
