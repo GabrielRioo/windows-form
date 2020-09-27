@@ -28,21 +28,103 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.cb_carro = new System.Windows.Forms.CheckBox();
+			this.cb_aviao = new System.Windows.Forms.CheckBox();
+			this.cb_navio = new System.Windows.Forms.CheckBox();
+			this.cb_onibus = new System.Windows.Forms.CheckBox();
+			this.btn_transportesMarcados = new System.Windows.Forms.Button();
+			this.cb_patinete = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
+			// 
+			// cb_carro
+			// 
+			this.cb_carro.AutoSize = true;
+			this.cb_carro.Location = new System.Drawing.Point(12, 25);
+			this.cb_carro.Name = "cb_carro";
+			this.cb_carro.Size = new System.Drawing.Size(51, 17);
+			this.cb_carro.TabIndex = 0;
+			this.cb_carro.Text = "Carro";
+			this.cb_carro.UseVisualStyleBackColor = true;
+			// 
+			// cb_aviao
+			// 
+			this.cb_aviao.AutoSize = true;
+			this.cb_aviao.Location = new System.Drawing.Point(12, 48);
+			this.cb_aviao.Name = "cb_aviao";
+			this.cb_aviao.Size = new System.Drawing.Size(53, 17);
+			this.cb_aviao.TabIndex = 1;
+			this.cb_aviao.Text = "Avião";
+			this.cb_aviao.UseVisualStyleBackColor = true;
+			// 
+			// cb_navio
+			// 
+			this.cb_navio.AutoSize = true;
+			this.cb_navio.Location = new System.Drawing.Point(12, 71);
+			this.cb_navio.Name = "cb_navio";
+			this.cb_navio.Size = new System.Drawing.Size(54, 17);
+			this.cb_navio.TabIndex = 2;
+			this.cb_navio.Text = "Navio";
+			this.cb_navio.UseVisualStyleBackColor = true;
+			// 
+			// cb_onibus
+			// 
+			this.cb_onibus.AutoSize = true;
+			this.cb_onibus.Location = new System.Drawing.Point(12, 94);
+			this.cb_onibus.Name = "cb_onibus";
+			this.cb_onibus.Size = new System.Drawing.Size(59, 17);
+			this.cb_onibus.TabIndex = 3;
+			this.cb_onibus.Text = "Onibus";
+			this.cb_onibus.UseVisualStyleBackColor = true;
+			// 
+			// btn_transportesMarcados
+			// 
+			this.btn_transportesMarcados.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn_transportesMarcados.Location = new System.Drawing.Point(184, 25);
+			this.btn_transportesMarcados.Name = "btn_transportesMarcados";
+			this.btn_transportesMarcados.Size = new System.Drawing.Size(249, 23);
+			this.btn_transportesMarcados.TabIndex = 4;
+			this.btn_transportesMarcados.Text = "TRANSPORTES MARCADOS";
+			this.btn_transportesMarcados.UseVisualStyleBackColor = true;
+			this.btn_transportesMarcados.Click += new System.EventHandler(this.btn_transportesMarcados_Click);
+			// 
+			// cb_patinete
+			// 
+			this.cb_patinete.AutoSize = true;
+			this.cb_patinete.Location = new System.Drawing.Point(193, 283);
+			this.cb_patinete.Name = "cb_patinete";
+			this.cb_patinete.Size = new System.Drawing.Size(65, 17);
+			this.cb_patinete.TabIndex = 5;
+			this.cb_patinete.Text = "Patinete";
+			this.cb_patinete.UseVisualStyleBackColor = true;
+			this.cb_patinete.CheckedChanged += new System.EventHandler(this.cb_patinete_CheckedChanged);
 			// 
 			// Form_ChecBox
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(445, 582);
+			this.Controls.Add(this.cb_patinete);
+			this.Controls.Add(this.btn_transportesMarcados);
+			this.Controls.Add(this.cb_onibus);
+			this.Controls.Add(this.cb_navio);
+			this.Controls.Add(this.cb_aviao);
+			this.Controls.Add(this.cb_carro);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Name = "Form_ChecBox";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "ChecBox";
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
+
+		private System.Windows.Forms.CheckBox cb_carro;
+		private System.Windows.Forms.CheckBox cb_aviao;
+		private System.Windows.Forms.CheckBox cb_navio;
+		private System.Windows.Forms.CheckBox cb_onibus;
+		private System.Windows.Forms.Button btn_transportesMarcados;
+		private System.Windows.Forms.CheckBox cb_patinete;
 	}
 }
