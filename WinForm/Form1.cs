@@ -12,9 +12,11 @@ namespace WinForm
 {
 	public partial class Form_Principal : Form
 	{
+		public int num;
 		public Form_Principal()
 		{
 			InitializeComponent();
+			num = 0;
 
 		}
 
@@ -52,8 +54,13 @@ namespace WinForm
 
 		private void btn_mostrar_Click(object sender, EventArgs e)
 		{
-			Form_Veiculos form_Veiculos = new Form_Veiculos(txb_listaVeiculos.Text);
+			Form_Veiculos form_Veiculos = new Form_Veiculos(txb_listaVeiculos.Text, this);
 			form_Veiculos.ShowDialog();
+		}
+
+		private void btn_valNum_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show(num.ToString());
 		}
 	}
 }
