@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ChecBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChecBox.Designer.cs">
+      <DependentUpon>Form_ChecBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CheckedListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CheckedListBox.Designer.cs">
+      <DependentUpon>Form_CheckedListBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ChecBox.resx">
+      <DependentUpon>Form_ChecBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CheckedListBox.resx">
+      <DependentUpon>Form_CheckedListBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Veiculos.resx">
       <DependentUpon>Form_Veiculos.cs</DependentUpon>

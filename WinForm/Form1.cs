@@ -62,5 +62,22 @@ namespace WinForm
 		{
 			MessageBox.Show(num.ToString());
 		}
+
+		private void lbl_texto_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_ChecBox form_ChecBox = new Form_ChecBox();
+			form_ChecBox.ShowDialog();
+		}
+
+		private void checkedToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_CheckedListBox form_checkedListBox = new Form_CheckedListBox();
+			form_checkedListBox.ShowDialog();
+		}
 	}
 }

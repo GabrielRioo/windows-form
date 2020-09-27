@@ -36,6 +36,11 @@
 			this.btn_limpar = new System.Windows.Forms.Button();
 			this.btn_mostrar = new System.Windows.Forms.Button();
 			this.btn_valNum = new System.Windows.Forms.Button();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.checkBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.checkedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btn_adicionar
@@ -43,7 +48,7 @@
 			this.btn_adicionar.BackColor = System.Drawing.Color.Green;
 			this.btn_adicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_adicionar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btn_adicionar.Location = new System.Drawing.Point(273, 68);
+			this.btn_adicionar.Location = new System.Drawing.Point(273, 101);
 			this.btn_adicionar.Name = "btn_adicionar";
 			this.btn_adicionar.Size = new System.Drawing.Size(155, 42);
 			this.btn_adicionar.TabIndex = 0;
@@ -55,16 +60,17 @@
 			// 
 			this.lbl_texto.AutoSize = true;
 			this.lbl_texto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_texto.Location = new System.Drawing.Point(110, 9);
+			this.lbl_texto.Location = new System.Drawing.Point(74, 45);
 			this.lbl_texto.Name = "lbl_texto";
-			this.lbl_texto.Size = new System.Drawing.Size(224, 31);
+			this.lbl_texto.Size = new System.Drawing.Size(303, 31);
 			this.lbl_texto.TabIndex = 1;
-			this.lbl_texto.Text = "Digite um Veiculo";
+			this.lbl_texto.Text = "Digite um Alguma Coisa";
+			this.lbl_texto.Click += new System.EventHandler(this.lbl_texto_Click);
 			// 
 			// txb_veiculo
 			// 
 			this.txb_veiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txb_veiculo.Location = new System.Drawing.Point(12, 71);
+			this.txb_veiculo.Location = new System.Drawing.Point(12, 104);
 			this.txb_veiculo.Multiline = true;
 			this.txb_veiculo.Name = "txb_veiculo";
 			this.txb_veiculo.Size = new System.Drawing.Size(236, 35);
@@ -74,7 +80,7 @@
 			// 
 			this.lbl_newText.AutoSize = true;
 			this.lbl_newText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_newText.Location = new System.Drawing.Point(168, 217);
+			this.lbl_newText.Location = new System.Drawing.Point(168, 250);
 			this.lbl_newText.Name = "lbl_newText";
 			this.lbl_newText.Size = new System.Drawing.Size(0, 25);
 			this.lbl_newText.TabIndex = 3;
@@ -82,7 +88,7 @@
 			// txb_listaVeiculos
 			// 
 			this.txb_listaVeiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txb_listaVeiculos.Location = new System.Drawing.Point(12, 123);
+			this.txb_listaVeiculos.Location = new System.Drawing.Point(12, 162);
 			this.txb_listaVeiculos.Multiline = true;
 			this.txb_listaVeiculos.Name = "txb_listaVeiculos";
 			this.txb_listaVeiculos.ReadOnly = true;
@@ -94,7 +100,7 @@
 			this.btn_limpar.BackColor = System.Drawing.Color.DarkRed;
 			this.btn_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_limpar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btn_limpar.Location = new System.Drawing.Point(12, 349);
+			this.btn_limpar.Location = new System.Drawing.Point(12, 382);
 			this.btn_limpar.Name = "btn_limpar";
 			this.btn_limpar.Size = new System.Drawing.Size(198, 42);
 			this.btn_limpar.TabIndex = 5;
@@ -107,7 +113,7 @@
 			this.btn_mostrar.BackColor = System.Drawing.Color.CadetBlue;
 			this.btn_mostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_mostrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btn_mostrar.Location = new System.Drawing.Point(230, 349);
+			this.btn_mostrar.Location = new System.Drawing.Point(230, 382);
 			this.btn_mostrar.Name = "btn_mostrar";
 			this.btn_mostrar.Size = new System.Drawing.Size(198, 42);
 			this.btn_mostrar.TabIndex = 6;
@@ -120,7 +126,7 @@
 			this.btn_valNum.BackColor = System.Drawing.Color.CadetBlue;
 			this.btn_valNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_valNum.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btn_valNum.Location = new System.Drawing.Point(12, 408);
+			this.btn_valNum.Location = new System.Drawing.Point(12, 441);
 			this.btn_valNum.Name = "btn_valNum";
 			this.btn_valNum.Size = new System.Drawing.Size(416, 42);
 			this.btn_valNum.TabIndex = 7;
@@ -128,11 +134,44 @@
 			this.btn_valNum.UseVisualStyleBackColor = false;
 			this.btn_valNum.Click += new System.EventHandler(this.btn_valNum_Click);
 			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.componentesToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(445, 24);
+			this.menuStrip1.TabIndex = 8;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// componentesToolStripMenuItem
+			// 
+			this.componentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkBoxToolStripMenuItem,
+            this.checkedToolStripMenuItem});
+			this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
+			this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+			this.componentesToolStripMenuItem.Text = "Componentes";
+			// 
+			// checkBoxToolStripMenuItem
+			// 
+			this.checkBoxToolStripMenuItem.Name = "checkBoxToolStripMenuItem";
+			this.checkBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.checkBoxToolStripMenuItem.Text = "CheckBox";
+			this.checkBoxToolStripMenuItem.Click += new System.EventHandler(this.checkBoxToolStripMenuItem_Click);
+			// 
+			// checkedToolStripMenuItem
+			// 
+			this.checkedToolStripMenuItem.Name = "checkedToolStripMenuItem";
+			this.checkedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.checkedToolStripMenuItem.Text = "CheckedListBox";
+			this.checkedToolStripMenuItem.Click += new System.EventHandler(this.checkedToolStripMenuItem_Click);
+			// 
 			// Form_Principal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(445, 582);
+			this.ClientSize = new System.Drawing.Size(445, 496);
 			this.Controls.Add(this.btn_valNum);
 			this.Controls.Add(this.btn_mostrar);
 			this.Controls.Add(this.btn_limpar);
@@ -141,12 +180,16 @@
 			this.Controls.Add(this.txb_veiculo);
 			this.Controls.Add(this.lbl_texto);
 			this.Controls.Add(this.btn_adicionar);
+			this.Controls.Add(this.menuStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.MainMenuStrip = this.menuStrip1;
 			this.MaximizeBox = false;
 			this.Name = "Form_Principal";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Estudo Windows Form";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -162,6 +205,10 @@
 		private System.Windows.Forms.Button btn_mostrar;
 		private System.Windows.Forms.Button btn_valNum;
 		public System.Windows.Forms.TextBox txb_listaVeiculos;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem componentesToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem checkBoxToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem checkedToolStripMenuItem;
 	}
 }
 

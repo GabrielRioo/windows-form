@@ -9,3 +9,5 @@ C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.exe
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.pdb
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_Principal.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_Veiculos.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ChecBox.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_CheckedListBox.resources
