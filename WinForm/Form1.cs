@@ -85,5 +85,11 @@ namespace WinForm
 			Form_ComboBox form_ComboBox = new Form_ComboBox();
 			form_ComboBox.ShowDialog();
 		}
+
+		private void dateTimePickerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_DateTimePicker form_DateTimePicker = new Form_DateTimePicker();
+			form_DateTimePicker.ShowDialog();
+		}
 	}
 }

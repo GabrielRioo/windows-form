@@ -70,6 +70,12 @@
     <Compile Include="Form_ComboBox.Designer.cs">
       <DependentUpon>Form_ComboBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_DateTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DateTimePicker.Designer.cs">
+      <DependentUpon>Form_DateTimePicker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_FilhoCheckBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ComboBox.resx">
       <DependentUpon>Form_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DateTimePicker.resx">
+      <DependentUpon>Form_DateTimePicker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_FilhoCheckBox.resx">
       <DependentUpon>Form_FilhoCheckBox.cs</DependentUpon>
