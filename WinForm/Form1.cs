@@ -79,5 +79,11 @@ namespace WinForm
 			Form_CheckedListBox form_checkedListBox = new Form_CheckedListBox();
 			form_checkedListBox.ShowDialog();
 		}
+
+		private void comboBoxToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_ComboBox form_ComboBox = new Form_ComboBox();
+			form_ComboBox.ShowDialog();
+		}
 	}
 }

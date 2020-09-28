@@ -40,6 +40,7 @@
 			this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.checkBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.checkedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.comboBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -148,7 +149,8 @@
 			// 
 			this.componentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checkBoxToolStripMenuItem,
-            this.checkedToolStripMenuItem});
+            this.checkedToolStripMenuItem,
+            this.comboBoxToolStripMenuItem});
 			this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
 			this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
 			this.componentesToolStripMenuItem.Text = "Componentes";
@@ -166,6 +168,13 @@
 			this.checkedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.checkedToolStripMenuItem.Text = "CheckedListBox";
 			this.checkedToolStripMenuItem.Click += new System.EventHandler(this.checkedToolStripMenuItem_Click);
+			// 
+			// comboBoxToolStripMenuItem
+			// 
+			this.comboBoxToolStripMenuItem.Name = "comboBoxToolStripMenuItem";
+			this.comboBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.comboBoxToolStripMenuItem.Text = "ComboBox";
+			this.comboBoxToolStripMenuItem.Click += new System.EventHandler(this.comboBoxToolStripMenuItem_Click);
 			// 
 			// Form_Principal
 			// 
@@ -209,6 +218,7 @@
 		private System.Windows.Forms.ToolStripMenuItem componentesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem checkBoxToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem checkedToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem comboBoxToolStripMenuItem;
 	}
 }
 

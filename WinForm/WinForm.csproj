@@ -64,6 +64,12 @@
     <Compile Include="Form_CheckedListBox.Designer.cs">
       <DependentUpon>Form_CheckedListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ComboBox.Designer.cs">
+      <DependentUpon>Form_ComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_FilhoCheckBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CheckedListBox.resx">
       <DependentUpon>Form_CheckedListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ComboBox.resx">
+      <DependentUpon>Form_ComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_FilhoCheckBox.resx">
       <DependentUpon>Form_FilhoCheckBox.cs</DependentUpon>
