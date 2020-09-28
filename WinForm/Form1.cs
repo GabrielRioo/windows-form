@@ -91,5 +91,11 @@ namespace WinForm
 			Form_DateTimePicker form_DateTimePicker = new Form_DateTimePicker();
 			form_DateTimePicker.ShowDialog();
 		}
+
+		private void labelLinkLabelToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_LinkLabel form_LinkLabel = new Form_LinkLabel();
+			form_LinkLabel.ShowDialog();
+		}
 	}
 }
