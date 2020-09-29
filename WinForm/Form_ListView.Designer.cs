@@ -28,17 +28,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+			System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "0",
             "Mouse",
             "180",
             "69,99"}, -1);
-			System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+			System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "1",
             "Teclado",
             "80",
             "134,99"}, -1);
-			System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
+			System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "2",
             "Monitor",
             "38",
@@ -71,9 +71,9 @@
 			this.lv_produtos.FullRowSelect = true;
 			this.lv_produtos.HideSelection = false;
 			this.lv_produtos.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7,
-            listViewItem8,
-            listViewItem9});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
 			this.lv_produtos.Location = new System.Drawing.Point(12, 12);
 			this.lv_produtos.MultiSelect = false;
 			this.lv_produtos.Name = "lv_produtos";
@@ -81,6 +81,7 @@
 			this.lv_produtos.TabIndex = 0;
 			this.lv_produtos.UseCompatibleStateImageBehavior = false;
 			this.lv_produtos.View = System.Windows.Forms.View.Details;
+			this.lv_produtos.SelectedIndexChanged += new System.EventHandler(this.lv_produtos_SelectedIndexChanged);
 			// 
 			// col_id
 			// 

@@ -27,10 +27,22 @@ namespace WinForm
 			txb_id.Focus();
 		}
 
+		private void obter()
+		{
+			if (lv_produtos.SelectedItems.Count > 0)
+			{
+				txb_id.Text = lv_produtos.SelectedItems[0].SubItems[0].Text;
+				txb_produto.Text = lv_produtos.SelectedItems[0].SubItems[1].Text;
+				txb_quantidade.Text = lv_produtos.SelectedItems[0].SubItems[2].Text;
+				txb_preco.Text = lv_produtos.SelectedItems[0].SubItems[3].Text;
+			}
+
+		}
+
 		private void btn_adicionar_Click(object sender, EventArgs e)
 		{
 
-			if(txb_id.Text == "" || txb_preco.Text == "" || txb_produto.Text == "" || txb_quantidade.Text == "")
+			if (txb_id.Text == "" || txb_preco.Text == "" || txb_produto.Text == "" || txb_quantidade.Text == "")
 			{
 				MessageBox.Show("Preencha todos os campos.");
 				return;
@@ -55,10 +67,13 @@ namespace WinForm
 
 		private void btn_obter_Click(object sender, EventArgs e)
 		{
-			txb_id.Text = lv_produtos.SelectedItems[0].SubItems[0].Text;
-			txb_produto.Text = lv_produtos.SelectedItems[0].SubItems[1].Text;
-			txb_quantidade.Text = lv_produtos.SelectedItems[0].SubItems[2].Text;
-			txb_preco.Text = lv_produtos.SelectedItems[0].SubItems[3].Text;
+			obter();
+		}
+
+		private void lv_produtos_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			obter();
+
 		}
 	}
 }
