@@ -69,7 +69,7 @@
 			this.btn_add.Name = "btn_add";
 			this.btn_add.Size = new System.Drawing.Size(100, 23);
 			this.btn_add.TabIndex = 3;
-			this.btn_add.Text = "button1";
+			this.btn_add.Text = "Adicionar";
 			this.btn_add.UseVisualStyleBackColor = false;
 			this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
 			// 

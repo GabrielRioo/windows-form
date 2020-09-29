@@ -23,6 +23,12 @@ namespace WinForm
 			lbx_carro.DataSource = carros;  
 		}
 
+		private void atualizarDataSource(ListBox lbx, List<string> list)
+		{
+			lbx.DataSource = null;
+			lbx.DataSource = list;
+		}
+
 		private void btn_add_Click(object sender, EventArgs e)
 		{
 			if(txb_carro.Text == "")
@@ -36,9 +42,8 @@ namespace WinForm
 				carros.Add(txb_carro.Text);
 				txb_carro.Clear();
 				txb_carro.Focus();
-				 
-				lbx_carro.DataSource = null;
-				lbx_carro.DataSource = carros;
+
+				atualizarDataSource(lbx_carro, carros);
 
 			}
 		}
@@ -46,8 +51,7 @@ namespace WinForm
 		private void btn_remover_Click(object sender, EventArgs e)
 		{
 			carros.RemoveAt(lbx_carro.SelectedIndex);
-			lbx_carro.DataSource = null;
-			lbx_carro.DataSource = carros;
+			atualizarDataSource(lbx_carro, carros);
 
 
 		}
@@ -61,8 +65,7 @@ namespace WinForm
 		{
 			carros.Clear();
 
-			lbx_carro.DataSource = null;
-			lbx_carro.DataSource = carros;
+			atualizarDataSource(lbx_carro, carros);
 		}
 	}
 }

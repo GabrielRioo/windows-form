@@ -103,5 +103,11 @@ namespace WinForm
 			Form_ListBox form_ListBox = new Form_ListBox();
 			form_ListBox.ShowDialog();
 		}
+
+		private void listViewToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_ListView form_ListView = new Form_ListView();
+			form_ListView.ShowDialog();
+		}
 	}
 }

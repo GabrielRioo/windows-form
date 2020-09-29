@@ -94,6 +94,12 @@
     <Compile Include="Form_ListBox.Designer.cs">
       <DependentUpon>Form_ListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_ListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListView.Designer.cs">
+      <DependentUpon>Form_ListView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ListBox.resx">
       <DependentUpon>Form_ListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListView.resx">
+      <DependentUpon>Form_ListView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Veiculos.resx">
       <DependentUpon>Form_Veiculos.cs</DependentUpon>
