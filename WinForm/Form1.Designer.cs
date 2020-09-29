@@ -139,6 +139,7 @@
 			// 
 			// menuStrip1
 			// 
+			this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.componentesToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);

@@ -66,6 +66,7 @@
 			this.lkl_multiplosLinks.TabIndex = 2;
 			this.lkl_multiplosLinks.TabStop = true;
 			this.lkl_multiplosLinks.Text = "Google - Canal - Youtube";
+			this.lkl_multiplosLinks.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_multiplosLinks_LinkClicked);
 			// 
 			// lbl_texto
 			// 
