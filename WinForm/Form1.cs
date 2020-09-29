@@ -97,5 +97,11 @@ namespace WinForm
 			Form_LinkLabel form_LinkLabel = new Form_LinkLabel();
 			form_LinkLabel.ShowDialog();
 		}
+
+		private void listBoxToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_ListBox form_ListBox = new Form_ListBox();
+			form_ListBox.ShowDialog();
+		}
 	}
 }

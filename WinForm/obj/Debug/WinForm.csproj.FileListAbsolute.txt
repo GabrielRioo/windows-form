@@ -14,3 +14,4 @@ C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_FilhoCheckBox.r
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ComboBox.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_DateTimePicker.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_LinkLabel.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ListBox.resources
