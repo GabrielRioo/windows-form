@@ -42,6 +42,7 @@
 			this.mcd_calendario.MaxSelectionCount = 30;
 			this.mcd_calendario.Name = "mcd_calendario";
 			this.mcd_calendario.TabIndex = 0;
+			this.mcd_calendario.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.mcd_calendario_DateChanged);
 			// 
 			// btn_pegarData
 			// 

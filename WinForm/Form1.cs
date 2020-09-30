@@ -121,5 +121,22 @@ namespace WinForm
 			Form_MonthCalendar form_MonthCalendar = new Form_MonthCalendar();
 			form_MonthCalendar.ShowDialog();
 		}
+
+		private void MenuNotificacoes_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+			if(e.ClickedItem.Name.ToString() == "tsmi_Fechar")
+			{
+				this.Close();
+			}
+
+			else if (e.ClickedItem.Name.ToString() == "tsmi_Restaurar")
+			{
+				this.WindowState = FormWindowState.Normal;
+			}
+			else if (e.ClickedItem.Name.ToString() == "tsmi_Mensagem")
+			{
+				MessageBox.Show("Olá Mundo!");
+			}
+		}
 	}
 }

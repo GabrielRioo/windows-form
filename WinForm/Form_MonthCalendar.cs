@@ -27,5 +27,12 @@ namespace WinForm
 		{
 			txb_dataAtual.Text = mcd_calendario.TodayDate.ToShortDateString();
 		}
+
+		private void mcd_calendario_DateChanged(object sender, DateRangeEventArgs e)
+		{
+			txb_text1.Text = mcd_calendario.SelectionStart.ToShortDateString();
+			txb_text2.Text = mcd_calendario.SelectionEnd.ToShortDateString();
+			txb_dataAtual.Text = mcd_calendario.TodayDate.ToShortDateString();
+		}
 	}
 }
