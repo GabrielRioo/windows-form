@@ -138,5 +138,11 @@ namespace WinForm
 				MessageBox.Show("Olá Mundo!");
 			}
 		}
+
+		private void numericUpDownToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_NumericUpDown form_NumericUpDown = new Form_NumericUpDown();
+			form_NumericUpDown.ShowDialog();
+		}
 	}
 }
