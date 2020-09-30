@@ -7,6 +7,34 @@
 * F7 - No formsDesign, precionando F7, abre o codigo.
 * Shift + F7 - No codigo, abre o formsDesign
 
+## Ferramentas: 
+* **DataTimePicker** - Calendario
+* Label - Texto
+* Button - Botão
+* **ChekedListBox** - Lista de Checklist
+* **ComboBox** - DropDown
+* ListBox - parecido com o ComboBox porem mostra todos, nao tem um dropdown
+* LinkLabel - Link para sites externos
+* TextBox - Input para escrever
+* ListView - tipo de tabela
+   * Edit Collumns - adicionar as colunas, com nome e texto
+   * Edit Itens - adicionar linhas
+      * Adicionar a primeira coluna da Tabela.
+      * Para adicionar as outras colunas: 
+         * Dados/ SubItems 
+         * Adicionar
+         * Escrever o nome no "Text"
+         * Adicionar... Até completetar os itens da tabela
+   * Para exibir a tabela: exibição ->  Details
+   * FullRowSelect: true - seleciona a linha toda ao clicar
+   * MultSelect: true - Permite selecionar mais do que um elemento
+* MaskedTextBox - mascara para Senha, Cep, numero, data...
+   * PasswordChar - <algum caracter> - para ser a senha
+   * TextMarkFormat:
+      * IncludeLiterals: inclui os caracteres especiais
+      * ExcludePromptAndLiterals: não inclui os caracteres especiais
+
+
 ## Propriedades:
 ### Para o Form:
 * **Appearance**
@@ -15,6 +43,9 @@
    * MaximizeBox - False- Não permite deixar em tela cheia
 * **CheckedListBox/ Data**
    * Items - Adicionar itens
+* **ListView / Aparencia**
+   * FullRowSelect: true - seleciona a linha toda ao clicar
+   * MultSelect: true - Permite selecionar mais do que um elemento
    
 ### Componentes:
 * **Behaviors**
@@ -25,20 +56,24 @@
    * (Name) - Nome do componente/método
    * Modifiers - Visibilidade do Objeto: public, private...
 
-### Métodos:
-* .Clean(); - Limpa o conteudo ali dentro
-* **Checked List Box**
-   * .Items.Clear(); - Limpa os Itens de um **Checked List Box**
-   * .Items.Add(object, bool); - Adiciona um item
-* .Focus(); - Poe em foco o conteudo 
-* MessageBox.Show(string); - Abre um textbox na tela com mensagem digitada.
-* .ShowDialog(); - Após instacia um objeto do novo Form, esse método mostrará a nova tela. _Não permite clicar nas janelas anteriores._
-* .Show(); - Após instacia um objeto do novo Form, esse método mostrará a nova tela. _Permite que clique e deixe em focus a janela anterior._
-* .Checked - Ve se está checado.
+### Métodos: (todos podem ser contultados na propriedade de cada componente)
+* `.Clean();` - Limpa o conteudo ali dentro
+* `**Checked List Box**`
+   * `.Items.Clear();` - Limpa os Itens de um **Checked List Box**
+   * `.Items.Add(object, bool);` - Adiciona um item
+* `.Focus();` - Poe em foco o conteudo 
+* `MessageBox.Show(string);` - Abre um textbox na tela com mensagem digitada.
+* `.ShowDialog();` - Após instacia um objeto do novo Form, esse método mostrará a nova tela. _Não permite clicar nas janelas anteriores._
+* `.Show();` - Após instacia um objeto do novo Form, esse método mostrará a nova tela. _Permite que clique e deixe em focus a janela anterior._
+* `.Checked` - Ve se está checado.
+* `.Links[2].Enabled = false; -` Desabilita um dos multiplos links
+* `.DataSource` - propriedade do **ListaBox & comboBox** para associar um elemento a uma fonte de dados
 
 
 ### Eventos / Funções:
 * **Behaviors**
    * FormClosed - Quando formulário for fechado.
+   * SelectedIndexchanged - quando for alterado o item da tabela
 * **Misc**
    * CheckedChanged - Usado para quando o checkbox for marcado mostrar/acontecer algo.
+* 
