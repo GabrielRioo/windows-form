@@ -8,7 +8,14 @@
 * Shift + F7 - No codigo, abre o formsDesign
 
 ## Ferramentas: 
-* **DataTimePicker** - Calendario
+* **DataTimePicker** - Calendario(em texto)
+* **MounthCalendar** - Calendário(visual, imagem com os dias)
+   * .SelectionRange (o range desde o startDay até o endDay)
+   * .SelectionStart - Dia Inicial
+   * .SelectionEnd - Dia Final
+   * .SelectionStart.ToShortTimeString() - Pega as horas
+   * .SelectionStart.ToShortDateString() - Pega a data (dia, mes e ano)
+   * .TodayDate.ToString() - Pega a data e hora atual
 * Label - Texto
 * Button - Botão
 * **ChekedListBox** - Lista de Checklist
@@ -28,12 +35,23 @@
    * Para exibir a tabela: exibição ->  Details
    * FullRowSelect: true - seleciona a linha toda ao clicar
    * MultSelect: true - Permite selecionar mais do que um elemento
-* MaskedTextBox - mascara para Senha, Cep, numero, data...
-   * PasswordChar - <algum caracter> - para ser a senha
+* **MaskedTextBox** - mascara para Senha, Cep, numero, data...
+   * PasswordChar - "algum caracter" - para ser a senha
    * TextMarkFormat:
       * IncludeLiterals: inclui os caracteres especiais
       * ExcludePromptAndLiterals: não inclui os caracteres especiais
+* **NotifyIcon** - 
+     * Selecionar um `Icon` a Visible = True
+     * ContextMenuStrip - Nome do ContextMenuStrip criado.
+* **ContextMenuStrip**
+     * Dados/ Items:
+     * Evento: ItemClicked - Quando um item for clicado.
+* **NumericUpDown** - Area de texto numérica, com setas para incrementar/decrementar
+* **PictureBox** - Serve para adicionar uma imagem 
 
+## Arquivo de Recursos:
+* Properties/Resourses.resx(clique duplo)
+   * A Vantagem de utilizar isso é que ao usar isso bastante no programa, ao alterar no "Arquivo de Recursos" irá alterar em todos os lugares que estiverem chamando esssa propriedade.
 
 ## Propriedades:
 ### Para o Form:
