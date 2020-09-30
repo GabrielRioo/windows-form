@@ -16,3 +16,4 @@ C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_DateTimePicker.
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_LinkLabel.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ListBox.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ListView.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_MaskedTextBox.resources

@@ -100,6 +100,12 @@
     <Compile Include="Form_ListView.Designer.cs">
       <DependentUpon>Form_ListView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_MaskedTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MaskedTextBox.Designer.cs">
+      <DependentUpon>Form_MaskedTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_ListView.resx">
       <DependentUpon>Form_ListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MaskedTextBox.resx">
+      <DependentUpon>Form_MaskedTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Veiculos.resx">
       <DependentUpon>Form_Veiculos.cs</DependentUpon>

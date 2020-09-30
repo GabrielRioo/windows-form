@@ -109,5 +109,11 @@ namespace WinForm
 			Form_ListView form_ListView = new Form_ListView();
 			form_ListView.ShowDialog();
 		}
+
+		private void maskedTextBoxToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_MaskedTextBox form_MaskedTextBox = new Form_MaskedTextBox();
+			form_MaskedTextBox.ShowDialog();
+		}
 	}
 }
