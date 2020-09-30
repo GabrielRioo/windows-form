@@ -19,3 +19,4 @@ C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ListView.resour
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_MaskedTextBox.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_MonthCalendar.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_NumericUpDown.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_PictureBox.resources

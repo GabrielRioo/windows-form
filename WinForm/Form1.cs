@@ -144,5 +144,13 @@ namespace WinForm
 			Form_NumericUpDown form_NumericUpDown = new Form_NumericUpDown();
 			form_NumericUpDown.ShowDialog();
 		}
+
+		private void pictureBoxToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_PictureBox form_PictureBox = new Form_PictureBox();
+			form_PictureBox.ShowDialog();
+			
+			
+		}
 	}
 }

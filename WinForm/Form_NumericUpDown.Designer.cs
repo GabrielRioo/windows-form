@@ -36,6 +36,7 @@
 			// 
 			// nud_numero
 			// 
+			this.nud_numero.DecimalPlaces = 2;
 			this.nud_numero.Increment = new decimal(new int[] {
             10,
             0,
