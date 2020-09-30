@@ -106,6 +106,12 @@
     <Compile Include="Form_MaskedTextBox.Designer.cs">
       <DependentUpon>Form_MaskedTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_MonthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MonthCalendar.Designer.cs">
+      <DependentUpon>Form_MonthCalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_MaskedTextBox.resx">
       <DependentUpon>Form_MaskedTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MonthCalendar.resx">
+      <DependentUpon>Form_MonthCalendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Veiculos.resx">
       <DependentUpon>Form_Veiculos.cs</DependentUpon>

@@ -115,5 +115,11 @@ namespace WinForm
 			Form_MaskedTextBox form_MaskedTextBox = new Form_MaskedTextBox();
 			form_MaskedTextBox.ShowDialog();
 		}
+
+		private void monthCalendarToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_MonthCalendar form_MonthCalendar = new Form_MonthCalendar();
+			form_MonthCalendar.ShowDialog();
+		}
 	}
 }
