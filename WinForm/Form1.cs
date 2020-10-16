@@ -152,5 +152,11 @@ namespace WinForm
 			
 			
 		}
+
+		private void progressBarToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_ProgressBar form_ProgressBar = new Form_ProgressBar();
+			form_ProgressBar.ShowDialog();
+		}
 	}
 }

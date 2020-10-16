@@ -20,3 +20,4 @@ C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_MaskedTextBox.r
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_MonthCalendar.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_NumericUpDown.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_PictureBox.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ProgressBar.resources

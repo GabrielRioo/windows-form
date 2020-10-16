@@ -139,6 +139,7 @@
 			this.Name = "Form_MaskedTextBox";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form_MaskedTextBox";
+			this.Load += new System.EventHandler(this.Form_MaskedTextBox_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

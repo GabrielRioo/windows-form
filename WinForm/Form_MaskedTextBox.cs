@@ -46,5 +46,10 @@ namespace WinForm
 				mtb_senha.PasswordChar = '*';
 			}
 		}
+
+		private void Form_MaskedTextBox_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
