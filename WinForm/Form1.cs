@@ -158,5 +158,11 @@ namespace WinForm
 			Form_ProgressBar form_ProgressBar = new Form_ProgressBar();
 			form_ProgressBar.ShowDialog();
 		}
+
+		private void radioButtonToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_RadioButton form_RadioButton = new Form_RadioButton();
+			form_RadioButton.ShowDialog();
+		}
 	}
 }
