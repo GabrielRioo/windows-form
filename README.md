@@ -1,6 +1,6 @@
 # Windows Form Application  
 ### Youtube: [CFBCursos](https://www.youtube.com/watch?v=UZdEkx-Z-7g)
-~[Aula 61](https://www.youtube.com/watch?v=UZdEkx-Z-7g)~ [Aula 68](https://www.youtube.com/watch?v=FKKbjTR4758)
+~[Aula 61](https://www.youtube.com/watch?v=UZdEkx-Z-7g)~ ~[Aula 68](https://www.youtube.com/watch?v=FKKbjTR4758)~ [81](https://www.youtube.com/watch?v=YsthjKVNVSA&list=PLx4x_zx8csUglgKTmgfVFEhWWBQCasNGi&index=81)
 <br>
 * Por padrão os componentes vem como **Private**
 ## Atalhos:
@@ -48,6 +48,10 @@
      * Evento: ItemClicked - Quando um item for clicado.
 * **NumericUpDown** - Area de texto numérica, com setas para incrementar/decrementar
 * **PictureBox** - Serve para adicionar uma imagem 
+* **ProgressBar** - Barra de Progresso
+* **RadioButton** - Radio Button (selecionar apenas um)
+* **GroupBox** - Cria um grupo para destinguir funções, como do radio button
+* **RichTextBox** - 
 
 ## Arquivo de Recursos:
 * Properties/Resourses.resx(clique duplo)
