@@ -136,6 +136,12 @@
     <Compile Include="Form_RadioButton.Designer.cs">
       <DependentUpon>Form_RadioButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_RichTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RichTextBox.Designer.cs">
+      <DependentUpon>Form_RichTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     <EmbeddedResource Include="Form_RadioButton.resx">
       <DependentUpon>Form_RadioButton.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_RichTextBox.resx">
+      <DependentUpon>Form_RichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Veiculos.resx">
       <DependentUpon>Form_Veiculos.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +229,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\2436733.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\centro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esquerda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

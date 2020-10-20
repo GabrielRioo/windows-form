@@ -22,3 +22,4 @@ C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_NumericUpDown.r
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_PictureBox.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_ProgressBar.resources
 C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_RadioButton.resources
+C:\Gabrieltmp\GitHub\windows-form\WinForm\obj\Debug\WinForm.Form_RichTextBox.resources

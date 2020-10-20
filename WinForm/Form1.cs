@@ -164,5 +164,11 @@ namespace WinForm
 			Form_RadioButton form_RadioButton = new Form_RadioButton();
 			form_RadioButton.ShowDialog();
 		}
+
+		private void richTextBoxEditoTextoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Form_RichTextBox form_RichTextBox = new Form_RichTextBox();
+			form_RichTextBox.ShowDialog();
+		}
 	}
 }
