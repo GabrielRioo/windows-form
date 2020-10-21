@@ -73,5 +73,48 @@ namespace WinForm
 		{
 			Salvar();
 		}
+
+		private void Abrir()
+		{
+			this.openFileDialog1.Multiselect = false;
+			this.openFileDialog1.Title = "Abrir Arquivo";
+			openFileDialog1.InitialDirectory = @"C:\Gabrieltmp\GitHub\windows-form\WinForm\";
+			openFileDialog1.Filter = "(*.txt)|*.txt";
+
+			if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
+			{
+				try
+				{
+					FileStream arquivo = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read);
+					StreamReader leitor = new StreamReader(arquivo);
+					leitor.BaseStream.Seek(0, SeekOrigin.Begin);
+					this.rtxb_editor.Text = "";
+					string linha = leitor.ReadLine();
+
+					while(linha != null)
+					{
+						this.rtxb_editor.Text += linha + "\n";
+						linha = leitor.ReadLine();
+					}
+					leitor.Close();
+				}
+				catch(Exception ex)
+				{
+					MessageBox.Show("Erro de leitura: \n" + ex.Message, "Erro ao ler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+
+
+		}
+
+		private void btn_abrir_Click(object sender, EventArgs e)
+		{
+			Abrir();
+		}
+
+		private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Abrir();
+		}
 	}
 }

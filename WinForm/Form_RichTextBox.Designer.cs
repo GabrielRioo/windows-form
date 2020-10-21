@@ -128,6 +128,7 @@
 			this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
 			this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.abrirToolStripMenuItem.Text = "Abrir";
+			this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
 			// 
 			// salvarToolStripMenuItem
 			// 
@@ -294,6 +295,7 @@
 			this.btn_abrir.Name = "btn_abrir";
 			this.btn_abrir.Size = new System.Drawing.Size(23, 22);
 			this.btn_abrir.Text = "Abrir";
+			this.btn_abrir.Click += new System.EventHandler(this.btn_abrir_Click);
 			// 
 			// btn_Salvar
 			// 
@@ -408,6 +410,7 @@
 			// saveFileDialog1
 			// 
 			this.saveFileDialog1.DefaultExt = "txt";
+			this.saveFileDialog1.Filter = "(*.txt)|*.txt";
 			// 
 			// printDialog1
 			// 
