@@ -52,6 +52,13 @@
 * **RadioButton** - Radio Button (selecionar apenas um)
 * **GroupBox** - Cria um grupo para destinguir funções, como do radio button
 * **RichTextBox** - 
+* **MenuStrip** - Menu horizontal
+* **ToolStrip** - Menu secundário com icones de atalho
+* **fontDialog** - 
+* **openFileDialog** - 
+* **saveFileDialog** - 
+* **printDialog** - 
+* **printDocument** - 
 
 ## Arquivo de Recursos:
 * Properties/Resourses.resx(clique duplo)
